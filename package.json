@@ -4,7 +4,10 @@
   "description": "A Vue.js project",
   "author": "xiaobei <xiaobei.quq@gmail.com>",
   "private": true,
-  "scripts": {},
+  "scripts": {
+      "start": "parcel index.html",
+      "build": "rm -rf dist && parcel build index.html"
+  },
   "dependencies": {
     "vue": "^2.5.17",
     "vue-hot-reload-api": "^2.3.0"
