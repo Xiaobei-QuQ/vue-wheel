@@ -1,18 +1,29 @@
 {
-  "name": "vue-wheel",
-  "version": "0.0.1",
-  "description": "vue,wheel",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "vue",
-    "ui框架"
-  ],
-  "author": "north",
-  "license": "MIT",
+  "name": "vue-cnode",
+  "version": "1.0.0",
+  "description": "A Vue.js project",
+  "author": "xiaobei <xiaobei.quq@gmail.com>",
+  "private": true,
+  "scripts": {},
   "dependencies": {
-    "vue": "^2.5.17"
+    "vue": "^2.5.17",
+    "vue-hot-reload-api": "^2.3.0"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.2.0",
+    "node-sass": "^4.9.2",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common.js"
   }
 }
