@@ -41,14 +41,17 @@
 </head>
 <body>
 <div id="app">
-    <g-button icon="settings">
+    <g-button :loading="true" @click="loading1 = !loading1">
         按钮
     </g-button>
-    <g-button icon="settings" icon-position="right">
+    <g-button icon="settings" :loading="loading2" @click="loading2 = !loading2">
+        按钮
+    </g-button>
+    <g-button icon="settings" icon-position="right" :loading="loading3" @click="loading3 = !loading3">
         按钮
     </g-button>
 </div>
-<script src="//at.alicdn.com/t/font_817358_nhikt20m6ul.js"></script>
+<script src="//at.alicdn.com/t/font_817358_d2rc0n9slnp.js"></script>
 <script src="./src/app.js"></script>
 </body>
 </html>
