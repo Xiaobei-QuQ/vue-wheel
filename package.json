@@ -5,8 +5,8 @@
   "author": "xiaobei <xiaobei.quq@gmail.com>",
   "private": true,
   "scripts": {
-      "start": "npx parcel index.html --no-cache",
-      "build": "rm -rf dist && parcel build index.html"
+    "start": "npx parcel index.html --no-cache",
+    "build": "rm -rf dist && parcel build index.html"
   },
   "dependencies": {
     "vue": "^2.5.17",
@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^2.2.0",
+    "chai": "^4.1.2",
     "node-sass": "^4.9.2",
     "vue-template-compiler": "^2.5.17"
   },
