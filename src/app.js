@@ -81,7 +81,7 @@ const expect = chai.expect
     vm.$el.remove()
     vm.$destroy()
 }
-
+import spy from 'chai-spies'
 {
     //mock
     const Constructor = Vue.extend(Button)
@@ -91,9 +91,10 @@ const expect = chai.expect
         }
     })
     vm.$mount()
-    vm.$on('click',function () {
-        console.log(1)
-    })
+    let spy = chai.spy(function () {})
+    vm.$on('click',spy)
     let button = vm.$el
     button.click()
+    expect(spy).to.have.been.called()
+
 }
