@@ -1,7 +1,8 @@
 {
-  "name": "vue-cnode",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
+  "name": "north-wheel",
+  "version": "0.0.1",
+  "description": "north学vue造轮子",
+  "main": "index.js",
   "author": "xiaobei <xiaobei.quq@gmail.com>",
   "private": true,
   "scripts": {
