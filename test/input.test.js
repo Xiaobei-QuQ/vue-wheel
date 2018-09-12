@@ -71,11 +71,17 @@ describe('Button', () => {
                 vm = new  Constructor({}).$mount()
                 const callback = sinon.fake()
                 vm.$on(eventName,callback)
-                //触发input的input事件
-                var event = new Event(eventName)
+                let event = new Event(eventName)
+                //浏览器会自动补全target.value，
+                // 因此这里需要用Object.defineProperty破坏只读属性
+                Object.defineProperty(
+                    event,'target',{
+                        value:{value:'hi'},enumerable:true
+                    }
+                )
                 let inputElement = vm.$el.querySelector('input')
-                inputElement.dispatchEvent(event);
-                expect(callback).to.have.been.calledWith(event);
+                inputElement.dispatchEvent(event)
+                expect(callback).to.have.been.calledWith('hi');
             })
         })
         // it('支持change事件', function () {
