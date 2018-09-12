@@ -8,8 +8,10 @@
         </div>
     </button>
 </template>
+
 <script>
     import Icon from './icon'
+    import './svg'
     export default {
         components: {
             'g-icon': Icon
